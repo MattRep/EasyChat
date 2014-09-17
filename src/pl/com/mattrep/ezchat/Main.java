@@ -14,9 +14,6 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
-import pl.serip.Guild;
-import pl.serip.data.DataGildia;
-import pl.serip.data.DataGracz;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
 
 public class Main
@@ -75,7 +72,7 @@ public class Main
         if(p.hasPermission("ezchat.chat")){
 	        String pex_prefix = this.pex.getUser(p).getPrefix();
 	        
-	        String message = getConfig().getString("chat").replaceAll("&", "ง");
+	        String message = getConfig().getString("chat").replaceAll("&", "ยง");
 	        message = message.replaceAll("%player%", p.getName());
 	        message = message.replaceAll("%pex_prefix%", Tools.fixColors(pex_prefix));
 	        message = message.replaceAll("%message%", event.getMessage());
