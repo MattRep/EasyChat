@@ -1,0 +1,5 @@
+name: EzChat
+author: MattRep
+main: pl.com.mattrep.ezchat.Main
+version: 1.0
+depend: [PermissionsEx]

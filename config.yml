@@ -1,0 +1,5 @@
+enabled: true
+cooldown: 2
+chat: "%pex_prefix% &7%player%: &f%message%"
+no-swear:
+  - idiot
